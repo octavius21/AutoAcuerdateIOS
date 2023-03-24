@@ -13,7 +13,7 @@ _El Logo esta pensado de una forma sencilla contiene dos partes simbolicas
 La primera es el carro donde representa todo que conlleve a este
 y El segundo elemento es un disco duro en el cual se guardara toda la informaciòn de este para el manejo de la anterior parte_
 
-![Image text](https://raw.githubusercontent.com/octavius21/AutoAcuerdateIOS/main/AutoAcuerdate/AutoAcuerdate/Assets.xcassets/AppIcon.appiconset/120.p)
+![Image text](https://raw.githubusercontent.com/octavius21/AutoAcuerdateIOS/main/AutoAcuerdate/AutoAcuerdate/Assets.xcassets/AppIcon.appiconset/120.png)
 
 _Se realizó la apliacón de forma nativa ya que creemos firmemente que podemos llegar a los usuarios que quieran cambiar su dispositivo o darnos su voto de confianza ya que la amplia variadad de gamas pueden ser uso de esta aplicacion 
 con cualquier tipo de auto que tenga el usuario
@@ -55,8 +55,8 @@ Pwd: 123456-->
 ## Wiki 📖
 
 _Puedes encontrar mucho más información al respecto en:_
-* [Curso]( [https://m3.material.io/components/]([https://www.udemy.com/course/swift_ios/](https://docencia.tic.unam.mx/diplomado-en-dispositivos-moviles))) - DGTIC DEsarrollo de aplicaciones para dispositivos moviles
-* [Curso]( [https://m3.material.io/components/](https://www.udemy.com/course/swift_ios/)) - iOS y Swift 5.7  Curso Completo Desde Cero a Profesional
+* [Curso DGTIC](https://docencia.tic.unam.mx/diplomado-en-dispositivos-moviles) - DGTIC DEsarrollo de aplicaciones para dispositivos moviles
+* [Curso Udemy](https://www.udemy.com/course/swift_ios/) - iOS y Swift 5.7  Curso Completo Desde Cero a Profesional
 
 
 
