@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="carCell" rowHeight="138" id="KGk-i7-Jjw" customClass="CarItemTableViewCell" customModule="AutoAcuerdate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qOW-l3-DyD">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GZs-aM-YG8">
+                                <rect key="frame" x="0.0" y="1.3333333333333357" width="120" height="117.33333333333333"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="OGQ-Hw-Udf"/>
+                                    <constraint firstAttribute="height" constant="120" id="sHf-Zn-RZr"/>
+                                </constraints>
+                                <imageReference key="image" image="car" catalog="system" symbolScale="default" variableValue="0.0"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gda-SV-Wva">
+                                <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wm6-Sg-ZGl">
+                                        <rect key="frame" x="10" y="10" width="100" height="32"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="textColor" name="ColorLabelsAddCar"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeB-ob-mpS">
+                                        <rect key="frame" x="10" y="52" width="100" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <color key="textColor" name="ColorOnBackGround"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTp-Z0-WPx">
+                                        <rect key="frame" x="0.0" y="70" width="120" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nku-GD-MeT">
+                                                <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                <color key="backgroundColor" red="0.94328004119999997" green="0.53489009519999997" blue="0.40652126290000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="CcW-fP-rLo"/>
+                                                    <constraint firstAttribute="width" constant="30" id="zG2-UA-BI4"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46f-cY-1e1">
+                                                <rect key="frame" x="50" y="10" width="60" height="30"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" name="ColorLabelsAddCar"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Nku-GD-MeT" secondAttribute="bottom" constant="10" id="3xa-BC-VhO"/>
+                                            <constraint firstItem="46f-cY-1e1" firstAttribute="top" secondItem="PTp-Z0-WPx" secondAttribute="top" constant="10" id="3z9-GV-s3Y"/>
+                                            <constraint firstItem="46f-cY-1e1" firstAttribute="leading" secondItem="Nku-GD-MeT" secondAttribute="trailing" constant="10" id="HaE-jv-4mL"/>
+                                            <constraint firstAttribute="bottom" secondItem="46f-cY-1e1" secondAttribute="bottom" constant="10" id="MM9-pg-8j3"/>
+                                            <constraint firstItem="Nku-GD-MeT" firstAttribute="top" secondItem="PTp-Z0-WPx" secondAttribute="top" constant="10" id="Ttf-UO-7Ze"/>
+                                            <constraint firstAttribute="trailing" secondItem="46f-cY-1e1" secondAttribute="trailing" constant="10" id="hqQ-XJ-b9h"/>
+                                            <constraint firstItem="Nku-GD-MeT" firstAttribute="leading" secondItem="PTp-Z0-WPx" secondAttribute="leading" constant="10" id="o3E-wh-2S0"/>
+                                            <constraint firstItem="46f-cY-1e1" firstAttribute="leading" secondItem="Nku-GD-MeT" secondAttribute="trailing" constant="10" id="uRx-52-Fhp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wm6-Sg-ZGl" firstAttribute="leading" secondItem="Gda-SV-Wva" secondAttribute="leading" constant="10" id="0lB-xy-D8A"/>
+                                    <constraint firstItem="Wm6-Sg-ZGl" firstAttribute="leading" secondItem="Gda-SV-Wva" secondAttribute="leading" constant="10" id="MvS-BJ-RM8"/>
+                                    <constraint firstItem="PTp-Z0-WPx" firstAttribute="leading" secondItem="Gda-SV-Wva" secondAttribute="leading" id="U9z-Oc-BD1"/>
+                                    <constraint firstItem="FeB-ob-mpS" firstAttribute="top" secondItem="Wm6-Sg-ZGl" secondAttribute="bottom" constant="10" id="Y5q-1F-MXR"/>
+                                    <constraint firstItem="FeB-ob-mpS" firstAttribute="top" secondItem="Wm6-Sg-ZGl" secondAttribute="bottom" constant="10" id="au8-ml-ryn"/>
+                                    <constraint firstItem="Wm6-Sg-ZGl" firstAttribute="top" secondItem="Gda-SV-Wva" secondAttribute="top" constant="10" id="kIC-Pk-9Rl"/>
+                                    <constraint firstItem="FeB-ob-mpS" firstAttribute="leading" secondItem="Gda-SV-Wva" secondAttribute="leading" constant="10" id="oHn-CH-kDf"/>
+                                    <constraint firstItem="PTp-Z0-WPx" firstAttribute="top" secondItem="FeB-ob-mpS" secondAttribute="bottom" id="ppg-aq-2Lz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wm6-Sg-ZGl" secondAttribute="trailing" constant="10" id="vXS-Kf-7BA"/>
+                                    <constraint firstAttribute="trailing" secondItem="FeB-ob-mpS" secondAttribute="trailing" constant="10" id="xZ6-O8-XO0"/>
+                                    <constraint firstAttribute="trailing" secondItem="PTp-Z0-WPx" secondAttribute="trailing" id="zle-RV-eoS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GZs-aM-YG8" firstAttribute="leading" secondItem="qOW-l3-DyD" secondAttribute="leading" id="0e2-m9-Cbv"/>
+                            <constraint firstItem="GZs-aM-YG8" firstAttribute="top" secondItem="qOW-l3-DyD" secondAttribute="top" id="7gL-K3-CHf"/>
+                            <constraint firstItem="Gda-SV-Wva" firstAttribute="leading" secondItem="GZs-aM-YG8" secondAttribute="trailing" id="Ayu-J4-BB0"/>
+                            <constraint firstAttribute="trailing" secondItem="Gda-SV-Wva" secondAttribute="trailing" id="C0f-VX-iiF"/>
+                            <constraint firstAttribute="bottom" secondItem="GZs-aM-YG8" secondAttribute="bottom" id="MFa-qX-YLO"/>
+                            <constraint firstAttribute="bottom" secondItem="Gda-SV-Wva" secondAttribute="bottom" id="faL-ps-s5A"/>
+                            <constraint firstItem="Gda-SV-Wva" firstAttribute="top" secondItem="qOW-l3-DyD" secondAttribute="top" id="g6l-2F-MoX"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qOW-l3-DyD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0Fa-5c-cwo"/>
+                    <constraint firstAttribute="trailing" secondItem="qOW-l3-DyD" secondAttribute="trailing" id="R59-0K-cBQ"/>
+                    <constraint firstItem="qOW-l3-DyD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ubq-9T-LhH"/>
+                    <constraint firstAttribute="bottom" secondItem="qOW-l3-DyD" secondAttribute="bottom" id="g1V-RY-52E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="carBrandLabel" destination="Wm6-Sg-ZGl" id="JPz-yW-WPl"/>
+                <outlet property="carImageView" destination="GZs-aM-YG8" id="yEf-g7-Wwj"/>
+                <outlet property="carModelLabel" destination="FeB-ob-mpS" id="hPL-Ra-ckm"/>
+                <outlet property="colorPlateImageView" destination="Nku-GD-MeT" id="Kgo-Tr-28I"/>
+                <outlet property="plateLabel" destination="46f-cY-1e1" id="qsd-qs-7ZP"/>
+            </connections>
+            <point key="canvasLocation" x="-96.946564885496173" y="27.464788732394368"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="car" catalog="system" width="128" height="95"/>
+        <namedColor name="ColorLabelsAddCar">
+            <color red="0.0" green="0.40000000596046448" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorOnBackGround">
+            <color red="0.014999999664723873" green="0.014999999664723873" blue="0.014999999664723873" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
