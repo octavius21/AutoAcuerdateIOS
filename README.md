@@ -1,12 +1,12 @@
 # AutoAcuerdateIOS
 
 ### Objetivo
-_Estamos incorsionando en las plataformas moviles de IOS, la cual hemos decidido copiar el mismo diseño de nuestra applicacion en Android. Como su hermana tambien te permite tener a la mano informacion fundamental de tu vehiculo y tambien de las credenciales que ocupas
+Estamos incorsionando en las plataformas moviles de IOS, la cual hemos decidido copiar el mismo diseño de nuestra applicacion en Android. Como su hermana tambien te permite tener a la mano informacion fundamental de tu vehiculo y tambien de las credenciales que ocupas
 como la tarjeta de Circulacion, Licencia de Conducir. Tambien el cual tiene integrado un mapa que te permite visualizar tus alrededores.
 Ya no deberas preocuparte de la información, ya la tendras al alcance de tu mano.
 No tendras de que preocuparte del modo Oscuro o modo Normal, ya que tiene unos diseños espectaculares y totalmente responsivos.
 
-La aplicaciòn fue desarrollada de forma nativa con el lenguaje de programaciòn Swift en Xcode_
+La aplicaciòn fue desarrollada de forma nativa con el lenguaje de programaciòn Swift en Xcode
 
 ## Introducción 🚀
 _El Logo esta pensado de una forma sencilla contiene dos partes simbolicas
@@ -69,13 +69,13 @@ _Puedes encontrar mucho más información al respecto en:_
 
 ### Preview 
 
-<img src="/1.jpg" align="left" width="150">
+<!-- <img src="/1.jpg" align="left" width="150">
 <img src="/2.jpg" align="left" width="150">
 <img src="/3.jpg" align="left" width="150">
 <img src="/4.jpg" align="left" width="150">
 <img src="/5.jpg" align="left" width="150">
 <img src="/6.jpg" align="left" width="150">
-<img src="/7.jpg" align="left" width="150">
+<img src="/7.jpg" align="left" width="150">-->
 
 
 <!--
