@@ -69,15 +69,15 @@ _Puedes encontrar mucho más información al respecto en:_
 
 ### Preview 
 
-<img src="/1.jpg" align="left" width="150">
-<img src="/2.jpg" align="left" width="150">
-<img src="/3.jpg" align="left" width="150">
-<img src="/4.jpg" align="left" width="150">
-<img src="/5.jpg" align="left" width="150">
-<img src="/6.jpg" align="left" width="150">
-<img src="/7.jpg" align="left" width="150">
-<img src="/8.jpg" align="left" width="150">
-<img src="/9.jpg" align="left" width="150">
+<img src="/1.png.png" align="left" width="150">
+<img src="/2.png" align="left" width="150">
+<img src="/3.png" align="left" width="150">
+<img src="/4.png" align="left" width="150">
+<img src="/5.png" align="left" width="150">
+<img src="/6.png" align="left" width="150">
+<img src="/7.png" align="left" width="150">
+<img src="/8.png" align="left" width="150">
+<img src="/9.png" align="left" width="150">
 
 
 <!--
