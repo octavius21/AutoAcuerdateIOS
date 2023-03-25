@@ -8,6 +8,7 @@
 import UIKit
 
 class CarItemTableViewCell: UITableViewCell {
+    @IBOutlet weak var carButon: UIButton!
     @IBOutlet weak var carImageView: UIImageView!
     @IBOutlet weak var carBrandLabel: UILabel!
     @IBOutlet weak var carModelLabel: UILabel!

@@ -24,6 +24,9 @@
 		86DA6EF229CCF90D00A31033 /* CardItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86DA6EF029CCF90C00A31033 /* CardItemCollectionViewCell.xib */; };
 		86DA6EF529CD19E300A31033 /* LocationItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DA6EF329CD19E200A31033 /* LocationItemCollectionViewCell.swift */; };
 		86DA6EF629CD19E300A31033 /* LocationItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86DA6EF429CD19E200A31033 /* LocationItemCollectionViewCell.xib */; };
+		86DA6EF829CE047D00A31033 /* CredentialDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DA6EF729CE047D00A31033 /* CredentialDetailViewController.swift */; };
+		86DA6EFB29CE0BDC00A31033 /* InternetMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DA6EFA29CE0BDC00A31033 /* InternetMonitor.swift */; };
+		86DA6EFD29CE0E1B00A31033 /* AddCredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DA6EFC29CE0E1B00A31033 /* AddCredentialViewController.swift */; };
 		86FE0D3629CBC92C0075350A /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FE0D3529CBC92B0075350A /* CredentialsViewController.swift */; };
 		86FE0D3829CBC9570075350A /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FE0D3729CBC9570075350A /* LocationsViewController.swift */; };
 		86FE0D3B29CBCE500075350A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FE0D3A29CBCE500075350A /* Car.swift */; };
@@ -54,6 +57,9 @@
 		86DA6EF029CCF90C00A31033 /* CardItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		86DA6EF329CD19E200A31033 /* LocationItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		86DA6EF429CD19E200A31033 /* LocationItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		86DA6EF729CE047D00A31033 /* CredentialDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialDetailViewController.swift; sourceTree = "<group>"; };
+		86DA6EFA29CE0BDC00A31033 /* InternetMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMonitor.swift; sourceTree = "<group>"; };
+		86DA6EFC29CE0E1B00A31033 /* AddCredentialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCredentialViewController.swift; sourceTree = "<group>"; };
 		86FE0D3529CBC92B0075350A /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
 		86FE0D3729CBC9570075350A /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		86FE0D3A29CBCE500075350A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -81,12 +87,14 @@
 		861C61A329CABD9B0014F092 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				861C61A429CABE540014F092 /* AddCarViewController.swift */,
 				861C61A629CB7F890014F092 /* CarListViewController.swift */,
-				861C61AD29CBA4900014F092 /* MapViewController.swift */,
-				86FE0D3529CBC92B0075350A /* CredentialsViewController.swift */,
-				86FE0D3729CBC9570075350A /* LocationsViewController.swift */,
 				86FE0D4029CCB0ED0075350A /* CarDetailViewController.swift */,
+				861C61A429CABE540014F092 /* AddCarViewController.swift */,
+				86FE0D3529CBC92B0075350A /* CredentialsViewController.swift */,
+				86DA6EF729CE047D00A31033 /* CredentialDetailViewController.swift */,
+				86DA6EFC29CE0E1B00A31033 /* AddCredentialViewController.swift */,
+				861C61AD29CBA4900014F092 /* MapViewController.swift */,
+				86FE0D3729CBC9570075350A /* LocationsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 		863E6EBB29CA068600D21C7B /* AutoAcuerdate */ = {
 			isa = PBXGroup;
 			children = (
+				86DA6EF929CE0B8D00A31033 /* Utils */,
 				86FE0D4629CCCEBC0075350A /* Cells */,
 				86FE0D3929CBCE0A0075350A /* Models */,
 				861C61A329CABD9B0014F092 /* Controllers */,
@@ -137,6 +146,14 @@
 				863E6EC529CA068600D21C7B /* AutoAcuerdate.xcdatamodeld */,
 			);
 			path = AutoAcuerdate;
+			sourceTree = "<group>";
+		};
+		86DA6EF929CE0B8D00A31033 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				86DA6EFA29CE0BDC00A31033 /* InternetMonitor.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		86FE0D3929CBCE0A0075350A /* Models */ = {
@@ -235,12 +252,14 @@
 			files = (
 				863E6EC129CA068600D21C7B /* ViewController.swift in Sources */,
 				86FE0D4129CCB0ED0075350A /* CarDetailViewController.swift in Sources */,
+				86DA6EF829CE047D00A31033 /* CredentialDetailViewController.swift in Sources */,
 				86DA6EF129CCF90D00A31033 /* CardItemCollectionViewCell.swift in Sources */,
 				861C61A729CB7F890014F092 /* CarListViewController.swift in Sources */,
 				86FE0D3B29CBCE500075350A /* Car.swift in Sources */,
 				86FE0D3829CBC9570075350A /* LocationsViewController.swift in Sources */,
 				86FE0D4429CCCE8A0075350A /* CarItemTableViewCell.swift in Sources */,
 				863E6EC729CA068600D21C7B /* AutoAcuerdate.xcdatamodeld in Sources */,
+				86DA6EFB29CE0BDC00A31033 /* InternetMonitor.swift in Sources */,
 				861C61A529CABE540014F092 /* AddCarViewController.swift in Sources */,
 				863E6EBD29CA068600D21C7B /* AppDelegate.swift in Sources */,
 				863E6EBF29CA068600D21C7B /* SceneDelegate.swift in Sources */,
@@ -248,6 +267,7 @@
 				86FE0D3629CBC92C0075350A /* CredentialsViewController.swift in Sources */,
 				86FE0D3F29CBCEC50075350A /* Location.swift in Sources */,
 				86DA6EF529CD19E300A31033 /* LocationItemCollectionViewCell.swift in Sources */,
+				86DA6EFD29CE0E1B00A31033 /* AddCredentialViewController.swift in Sources */,
 				86FE0D3D29CBCE980075350A /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +422,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +453,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

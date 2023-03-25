@@ -12,6 +12,8 @@ class CarListViewController: UITableViewController{
     @IBOutlet var carTableView: UITableView!
     var carNew: CarElement?
     var objectsCars = [CarElement]()
+    var carSend: CarElement?
+    var rowIndex: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         //carLisActivityIndicator.startAnimating()
@@ -23,17 +25,20 @@ class CarListViewController: UITableViewController{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // Consultar el API y serializar el JSON
-        guard let laURL = URL(string: "https://private-f5db4f-luisoctaviogomezdelacruzluocz.apiary-mock.com/cars") else { return }
-        
-        do {
-            let bytes = try Data(contentsOf: laURL)
-            let cars = try? JSONDecoder().decode(Car.self, from: bytes)
-            objectsCars = cars!.car
-            self.tableView.reloadData()
-        } catch {
-            print("Error al descargar el JSON " + String(describing: error))
+        if InternetMonitor.instance.internetStatus{
+            
+        }else{
+            // Consultar el API y serializar el JSON
+            guard let laURL = URL(string: "https://private-f5db4f-luisoctaviogomezdelacruzluocz.apiary-mock.com/cars") else { return }
+            
+            do {
+                let bytes = try Data(contentsOf: laURL)
+                let cars = try? JSONDecoder().decode(Car.self, from: bytes)
+                objectsCars = cars!.car
+                self.tableView.reloadData()
+            } catch {
+                print("Error al descargar el JSON " + String(describing: error))
+            }
         }
     }
     
@@ -92,7 +97,15 @@ class CarListViewController: UITableViewController{
         }
         cell?.plateLabel.text = carNew?.licensePlate ?? ""
         cell?.accessoryType = .disclosureIndicator
+        cell?.carButon.tag = indexPath.row
+        cell?.carButon.addTarget(self, action: #selector(rowBtnWasTapped(sender: )), for: .touchUpInside)
         return cell!
+    }
+    @objc
+    func rowBtnWasTapped(sender: UIButton){
+        rowIndex = sender.tag
+
+        performSegue(withIdentifier: "showEditCar", sender: self)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -108,6 +121,15 @@ class CarListViewController: UITableViewController{
             destination.carSend = carNew
             //carTableView.indexPathForSelectedRow!.row
         }
+
+        if segue.identifier == "showEditCar"{
+            let destination = segue.destination as! AddCarViewController
+            //Enviar el dato
+            destination.carRowSend = rowIndex!
+            print(objectsCars[rowIndex!].brand)
+            destination.carGet = objectsCars[rowIndex!]
+            //carTableView.indexPathForSelectedRow!.row
+        }
         
         //destination.recivedPersonaje = carNew
     }
@@ -116,6 +138,9 @@ class CarListViewController: UITableViewController{
         carNew = objectsCars[indexPath.row]
         return indexPath
     }
+    
+    
+   
     
 
   

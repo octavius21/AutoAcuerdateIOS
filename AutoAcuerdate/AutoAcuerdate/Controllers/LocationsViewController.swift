@@ -18,17 +18,25 @@ class LocationsViewController: UICollectionViewController,UICollectionViewDelega
         locationsCollectionView.register(UINib(nibName: "LocationItemCollectionViewCell", bundle: nil),forCellWithReuseIdentifier: "locationCell")
     }
     override func viewWillAppear(_ animated: Bool) {
-        
-        // Consultar el API y serializar el JSON
-        guard let laURL = URL(string: "https://private-f5db4f-luisoctaviogomezdelacruzluocz.apiary-mock.com/locations") else { return }
-        
-        do {
-            let bytes = try Data(contentsOf: laURL)
-            let locations = try? JSONDecoder().decode(Location.self, from: bytes)
-            objectsLocations = locations!.location
-            self.collectionView.reloadData()
-        } catch {
-            print("Error al descargar el JSON " + String(describing: error))
+        if !InternetMonitor.instance.internetStatus{
+            let alert = UIAlertController(title: "Need it Internet Conection", message: "This App need it Internet for used", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (okSelected) -> Void in
+                        self.dismiss(animated: true)
+                    }
+                    alert.addAction(okButton)
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            // Consultar el API y serializar el JSON
+            guard let laURL = URL(string: "https://private-f5db4f-luisoctaviogomezdelacruzluocz.apiary-mock.com/locations") else { return }
+            
+            do {
+                let bytes = try Data(contentsOf: laURL)
+                let locations = try? JSONDecoder().decode(Location.self, from: bytes)
+                objectsLocations = locations!.location
+                self.collectionView.reloadData()
+            } catch {
+                print("Error al descargar el JSON " + String(describing: error))
+            }
         }
     }
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
